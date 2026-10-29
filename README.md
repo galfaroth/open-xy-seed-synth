@@ -9,11 +9,11 @@ The source is a separate machine repository. Existing arranger work is unchanged
 
 ## Play and grow
 
-- Turn **Select** to choose F, F sharp, G, ... E. The bright circle marks the
+- Turn **Select** to choose F, F sharp, G, ... E. The white branch marks the
   explicit copy target. Selection does not follow the last played note.
 - Turn **Growth**: Sprout, Grow and Wild set mutation depth in a varied palette.
   Copy switches to Uniform; Grow switches back to Varied. The palette repeats in every octave.
-- Turn **Bright** for the next notes' filter brightness.
+- Turn **Bright** for live filter brightness, including held notes.
 - Turn **Seed** through state codes 0–32767: 0–16383 are varied palettes;
   16384–32767 are their uniform versions.
 - Press **Select** to copy the selected complete effective genome to every key.
@@ -24,16 +24,22 @@ Sharps are abbreviated Fs/Gs/etc. in the stock enum header; the palette shows
 F#/G#/etc. Pitch bend does not switch the captured seed. Stock legato updates
 without a new onset retain the original voice's seed. The stock amp envelope,
 filter and FX pages provide performance shaping. Held voices retain their
-captured genome and brightness, including during Copy/Grow.
+captured genome, including during Copy/Grow; Bright remains live.
 
 ## Sound and recall
 
 Version 1 has four three-bit genes and one two-bit gene for oscillator shape, B:A ratio, true bounded
-frequency modulation, noise/decay and filter tone. Sine interpolation, limited
+frequency modulation, noise/decay and filter tone. The second oscillator also
+contributes to the mix, so changing its ratio remains audible with FM at zero.
+Sine interpolation, limited
 second harmonics, a one-pole filter, a decaying amplitude contour and a fixed
 output gain keep mutation bounded. FM/harmonic depth reduces at high pitches.
 This is a deliberately compact 16384-genome instrument, without deep genome
 editing, resonance, history or audio-to-patch search.
+
+The audio fix increases FM depth and makes the second oscillator audible in the
+mix. Existing presets keep their stored genes and note mapping, but their timbre
+changes; this is not a bit-identical playback update.
 
 The complete palette is a pure function of four saved parameters. The parent
 genome and Uniform/Varied mode occupy one Q15-safe word; Growth selects a stable mutation mask for
@@ -66,9 +72,7 @@ bounds. Host timing is not a hardware CPU measurement.
 
 Firmware, stock assets and packages stay outside every checkout. A development
 collection includes the user's existing 22 machines plus Seed Synth, preserving
-its layout numbers. This isolated SDK build does not include the separate,
-uncommitted linear-arranger extension. Do not replace an arranger device image
-with it expecting arranger features. Device installation and profiling require
+its layout numbers. Device installation and profiling require
 separate authorization. Release-host verification and hardware acceptance are
 separate from a successful local compile.
 

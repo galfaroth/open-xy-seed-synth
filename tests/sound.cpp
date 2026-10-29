@@ -71,6 +71,35 @@ int main() {
     for (auto& p : pitch) p = 48000000;
     render(held, shared, 1, output, parameters, pitch);
     require(held.genome == captured && held.key == 65, "Held voice / bend identity");
+    // Different genome IDs alone are insufficient: compare actual audio at one pitch.
+    opxy::i32 palette[12][2048];
+    opxy::i32 sprout[8] = {saved(1365), saved(5461), saved(16384), saved(9234)};
+    for (auto& p : pitch) p = 42852281;
+    for (unsigned key = 0; key < 12; ++key) {
+        start(fresh, shared, 1, 65 + key);
+        for (unsigned block = 0; block < 32; ++block)
+            render(fresh, shared, 1, palette[key] + block * 64, sprout, pitch);
+        for (unsigned previous = 0; previous < key; ++previous) {
+            long long difference = 0, level = 0;
+            for (unsigned i = 0; i < 2048; ++i) {
+                difference += std::abs(static_cast<long long>(palette[key][i]) - palette[previous][i]);
+                level += std::abs(static_cast<long long>(palette[previous][i]));
+            }
+            require(difference > level / 100, "Sprout branches must differ in audio, not only genome IDs");
+        }
+    }
+    // Bright must change an already sounding voice, without changing its genome.
+    parameters[2] = 0;
+    start(fresh, shared, 1, 65); render(fresh, shared, 1, output, parameters, pitch);
+    Voice dark = fresh;
+    opxy::i32 dark_output[64];
+    render(dark, shared, 1, dark_output, parameters, pitch);
+    parameters[2] = 0x7fffffff;
+    render(fresh, shared, 1, output, parameters, pitch);
+    long long changed = 0;
+    for (unsigned i = 0; i < 64; ++i) changed += std::abs(static_cast<long long>(output[i]) - dark_output[i]);
+    require(changed > 1000000 && fresh.brightness > dark.brightness, "Bright responds on held notes");
+    require(fresh.genome == dark.genome, "Bright preserves genome");
     long long energy = 0;
     for (unsigned seed = 0; seed < 32768; seed += 127) {
         parameters[3] = saved(seed);
