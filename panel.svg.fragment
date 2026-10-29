@@ -1,30 +1,49 @@
 <g id="seedsynth_panel">
-<circle id="seedsynth_node_0" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="22" y="145" font-size="14" fill="#bbbbbb" stroke="none">F</text>
-<circle id="seedsynth_node_1" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="61" y="145" font-size="14" fill="#bbbbbb" stroke="none">F#</text>
-<circle id="seedsynth_node_2" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="100" y="145" font-size="14" fill="#bbbbbb" stroke="none">G</text>
-<circle id="seedsynth_node_3" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="139" y="145" font-size="14" fill="#bbbbbb" stroke="none">G#</text>
-<circle id="seedsynth_node_4" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="178" y="145" font-size="14" fill="#bbbbbb" stroke="none">A</text>
-<circle id="seedsynth_node_5" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="217" y="145" font-size="14" fill="#bbbbbb" stroke="none">A#</text>
-<circle id="seedsynth_node_6" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="256" y="145" font-size="14" fill="#bbbbbb" stroke="none">B</text>
-<circle id="seedsynth_node_7" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="295" y="145" font-size="14" fill="#bbbbbb" stroke="none">C</text>
-<circle id="seedsynth_node_8" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="334" y="145" font-size="14" fill="#bbbbbb" stroke="none">C#</text>
-<circle id="seedsynth_node_9" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="373" y="145" font-size="14" fill="#bbbbbb" stroke="none">D</text>
-<circle id="seedsynth_node_10" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="412" y="145" font-size="14" fill="#bbbbbb" stroke="none">D#</text>
-<circle id="seedsynth_node_11" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
-<text font-family="UniversNextPro-Light" x="451" y="145" font-size="14" fill="#bbbbbb" stroke="none">E</text>
-<text font-family="UniversNextPro-Light" id="seedsynth_text_0" font-size="16" fill="#ffffff" stroke="none">VARIED</text>
-<text font-family="UniversNextPro-Light" id="seedsynth_text_1" font-size="10" fill="#aaaaaa" stroke="none">SELECT COPY / GROW NEW</text>
+<path id="seedsynth_node_0" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_1" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_2" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_3" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_4" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_5" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_6" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_7" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_8" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_9" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_10" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<path id="seedsynth_node_11" d="M8 0 L20 -2 L30 -5 L36 -12 L44 -14 L42 -7 L35 -4 L46 -2 L60 0 L46 2 L33 1 L24 5 L18 10 L15 6 L21 1 Z" fill="none" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_12" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_13" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_14" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_15" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_16" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_17" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_18" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_19" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_20" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_21" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_22" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_23" cx="0" cy="0" r="3" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_node_24" cx="0" cy="0" r="7" fill="#000000" stroke="#ffffff" stroke-width="1"/>
+<text font-family="UniversNextPro-Light" x="237.00" y="46.00" font-size="12" fill="#aaaaaa" stroke="none">F</text>
+<text font-family="UniversNextPro-Light" x="275.50" y="57.12" font-size="12" fill="#aaaaaa" stroke="none">F#</text>
+<text font-family="UniversNextPro-Light" x="308.88" y="87.50" font-size="12" fill="#aaaaaa" stroke="none">G</text>
+<text font-family="UniversNextPro-Light" x="317.00" y="129.00" font-size="12" fill="#aaaaaa" stroke="none">G#</text>
+<text font-family="UniversNextPro-Light" x="308.88" y="170.50" font-size="12" fill="#aaaaaa" stroke="none">A</text>
+<text font-family="UniversNextPro-Light" x="275.50" y="200.88" font-size="12" fill="#aaaaaa" stroke="none">A#</text>
+<text font-family="UniversNextPro-Light" x="237.00" y="212.00" font-size="12" fill="#aaaaaa" stroke="none">B</text>
+<text font-family="UniversNextPro-Light" x="195.50" y="200.88" font-size="12" fill="#aaaaaa" stroke="none">C</text>
+<text font-family="UniversNextPro-Light" x="162.12" y="170.50" font-size="12" fill="#aaaaaa" stroke="none">C#</text>
+<text font-family="UniversNextPro-Light" x="154.00" y="129.00" font-size="12" fill="#aaaaaa" stroke="none">D</text>
+<text font-family="UniversNextPro-Light" x="162.12" y="87.50" font-size="12" fill="#aaaaaa" stroke="none">D#</text>
+<text font-family="UniversNextPro-Light" x="195.50" y="57.12" font-size="12" fill="#aaaaaa" stroke="none">E</text>
+<text font-family="UniversNextPro-Light" id="seedsynth_text_0" font-size="12" fill="#ffffff" stroke="none">VARIED</text>
+<text font-family="UniversNextPro-Light" id="seedsynth_text_1" font-size="24" fill="#ffffff" stroke="none">F</text>
+<text font-family="UniversNextPro-Light" x="24" y="69" font-size="10" fill="#777777" stroke="none">SEED SYNTH</text>
+<text font-family="UniversNextPro-Light" x="24" y="104" font-size="10" fill="#777777" stroke="none">SELECTED</text>
+<text font-family="UniversNextPro-Light" x="352" y="105" font-size="10" fill="#777777" stroke="none">PRESS SELECT</text>
+<text font-family="UniversNextPro-Light" x="352" y="122" font-size="12" fill="#bbbbbb" stroke="none">copy to all</text>
+<text font-family="UniversNextPro-Light" x="352" y="151" font-size="10" fill="#777777" stroke="none">PRESS GROWTH</text>
+<text font-family="UniversNextPro-Light" x="352" y="168" font-size="12" fill="#bbbbbb" stroke="none">grow branches</text>
 <circle id="seedsynth_palette_0" cx="640" cy="0" r="1" fill="#000000" stroke="#000000" stroke-width="1"/>
 <circle id="seedsynth_palette_1" cx="640" cy="0" r="1" fill="#111111" stroke="#111111" stroke-width="1"/>
 <circle id="seedsynth_palette_2" cx="640" cy="0" r="1" fill="#222222" stroke="#222222" stroke-width="1"/>

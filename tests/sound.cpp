@@ -1,4 +1,5 @@
 #include "engine.cpp"
+#include "display.cpp"
 #include <cstdio>
 #include <cstdlib>
 #include <cmath>
@@ -7,6 +8,22 @@
 using namespace seedsynth;
 void require(bool ok, const char* message) { if (!ok) { std::fprintf(stderr, "%s\n", message); std::exit(1); } }
 int main() {
+    for (unsigned seed : {0u, 9234u, 16383u, 16384u, 32767u}) {
+        for (unsigned selected = 0; selected < 12; ++selected) {
+            opxy::draw::Input input = {};
+            input.parameters[0] = saved((selected * 32768u + 16384u) / 12u);
+            input.parameters[1] = saved(32767);
+            input.parameters[3] = saved(seed);
+            DisplayState state = {}; Frame frame = {};
+            display_reset(state); display(state, input, frame);
+            require(opxy::draw::valid(frame), "Valid flower frame");
+            for (unsigned i = 0; i < 12; ++i) {
+                require(frame.nodes[i].shade == (i == selected ? 15u : 6u), "Flower selection");
+                require(frame.nodes[12+i].y > 38 * opxy::draw::unit && frame.nodes[12+i].y < 205 * opxy::draw::unit, "Flower below header");
+                if (seed & 16384u) require(frame.nodes[i].scale == frame.nodes[0].scale, "Uniform flower");
+            }
+        }
+    }
     require(slot(53) == 0 && slot(65) == 0 && slot(77) == 0 && slot(60) == 7, "F-first mapping");
     for (unsigned n = 0; n < 116; ++n) require(slot(n) == slot(n + 12), "Octave identity");
     opxy::i32 parameters[8] = {saved(1365), saved(12288), saved(16384), saved(9234)};

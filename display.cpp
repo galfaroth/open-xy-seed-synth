@@ -12,9 +12,20 @@ inline void display(DisplayState&, const opxy::draw::Input& input, Frame& frame)
     }
     header(frame, 3, digits);
     const opxy::u32 selected = choice(input.parameters[0], 12);
-    for (opxy::u32 i = 0; i < 12; ++i)
-        place(frame, i, (18 + i * 39) * unit, 85 * unit, unit, i == selected ? 15 : 5, fill_and_stroke);
-    text(frame, 0, 18 * unit, 65 * unit, unit, (word(input.parameters[3]) & 16384u) ? "UNIFORM" : "VARIED");
-    text(frame, 1, 18 * unit, 190 * unit, unit, "SELECT COPY / GROW NEW");
+    const char* const notes[12] = {"F", "F#", "G", "G#", "A", "A#", "B", "C", "C#", "D", "D#", "E"};
+    // Use the audible genome: copying to all gives twelve identical branches.
+    for (opxy::u32 i = 0; i < 12; ++i) {
+        const opxy::u32 genome = effective(input.parameters, i);
+        const opxy::i32 scale = 760 + static_cast<opxy::i32>((genome ^ (genome >> 7)) & 255u);
+        const Turn angle = rotation(-900 + static_cast<opxy::i32>(i) * 300);
+        const opxy::u32 shade = i == selected ? 15 : 6;
+        place(frame, i, 240 * unit, 125 * unit, scale, shade, stroke);
+        turn(frame, i, angle);
+        place(frame, 12 + i, 240 * unit + 60 * scale * angle.cos / unit,
+              125 * unit + 60 * scale * angle.sin / unit, unit, shade, fill_and_stroke);
+    }
+    place(frame, 24, 240 * unit, 125 * unit, unit, 15, stroke);
+    text(frame, 0, 24 * unit, 173 * unit, unit, (word(input.parameters[3]) & 16384u) ? "UNIFORM" : "VARIED");
+    text(frame, 1, 24 * unit, 135 * unit, unit, notes[selected]);
 }
 }

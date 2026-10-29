@@ -79,3 +79,7 @@ The ready-to-use CI template is `ci/machine.yml`. It is inactive because the
 current GitHub OAuth token cannot create workflows. Enable it by moving it to
 `.github/workflows/machine.yml` with an authorized GitHub account; no broader
 account permissions were requested. Local checks use the commands above.
+
+The monochrome flower shows twelve F-first branches around a seed. White marks
+the selected copy target; branch lengths follow the audible saved genomes.
+Copy-to-all makes the branches equal. The screen stays still while idle.
