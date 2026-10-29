@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sdk": "1.7",
+  "kind": "synth",
+  "description": "Twelve F-first timbres. Press Select to copy a sound to all keys; press Growth to grow a new palette.",
+  "presets": "presets"
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "seedsynth",
+  "name": "Seed Synth",
+  "press": "action",
+  "parameters": [
+    {
+      "id": "select",
+      "label": "Select",
+      "default": 0.04,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "F",
+          "Fs",
+          "G",
+          "Gs",
+          "A",
+          "As",
+          "B",
+          "C",
+          "Cs",
+          "D",
+          "Ds",
+          "E"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "growth",
+      "label": "Growth",
+      "default": 0.16666666666666666,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "Sprout",
+          "Grow",
+          "Wild"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "bright",
+      "label": "Bright",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "seed",
+      "label": "Seed",
+      "default": 0.28180791650135806,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 32767
+      },
+      "display": "percent"
+    }
+  ],
+  "presets": {
+    "Sprout": {
+      "select": 0.04,
+      "growth": 0.16666666666666666,
+      "bright": 0.5,
+      "seed": 0.28180791650135806
+    },
+    "Glass": {
+      "select": 0.04,
+      "growth": 0.5,
+      "bright": 0.7,
+      "seed": 0.3833124790185247
+    },
+    "Dust": {
+      "select": 0.04,
+      "growth": 0.8333333333333334,
+      "bright": 0.45,
+      "seed": 0.336558122501297
+    },
+    "Pure": {
+      "select": 0.04,
+      "growth": 0.16666666666666666,
+      "bright": 0.6,
+      "seed": 0.750022888882107
+    }
+  },
+  "resources": {
+    "voiceBytes": 36,
+    "voiceAlignment": 4,
+    "voiceCapacity": 16,
+    "sharedBytes": 0,
+    "noteStart": 1,
+    "outputPeakQ31": 268435456,
+    "display": {
+      "stateBytes": 4,
+      "stateAlignment": 4,
+      "paths": 0,
+      "points": 0,
+      "nodes": 12,
+      "texts": 2,
+      "palette": 16
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<g id="seedsynth_panel">
+<circle id="seedsynth_node_0" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="22" y="145" font-size="14" fill="#bbbbbb" stroke="none">F</text>
+<circle id="seedsynth_node_1" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="61" y="145" font-size="14" fill="#bbbbbb" stroke="none">F#</text>
+<circle id="seedsynth_node_2" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="100" y="145" font-size="14" fill="#bbbbbb" stroke="none">G</text>
+<circle id="seedsynth_node_3" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="139" y="145" font-size="14" fill="#bbbbbb" stroke="none">G#</text>
+<circle id="seedsynth_node_4" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="178" y="145" font-size="14" fill="#bbbbbb" stroke="none">A</text>
+<circle id="seedsynth_node_5" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="217" y="145" font-size="14" fill="#bbbbbb" stroke="none">A#</text>
+<circle id="seedsynth_node_6" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="256" y="145" font-size="14" fill="#bbbbbb" stroke="none">B</text>
+<circle id="seedsynth_node_7" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="295" y="145" font-size="14" fill="#bbbbbb" stroke="none">C</text>
+<circle id="seedsynth_node_8" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="334" y="145" font-size="14" fill="#bbbbbb" stroke="none">C#</text>
+<circle id="seedsynth_node_9" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="373" y="145" font-size="14" fill="#bbbbbb" stroke="none">D</text>
+<circle id="seedsynth_node_10" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="412" y="145" font-size="14" fill="#bbbbbb" stroke="none">D#</text>
+<circle id="seedsynth_node_11" cx="14" cy="18" r="14" fill="#555555" stroke="none"/>
+<text font-family="UniversNextPro-Light" x="451" y="145" font-size="14" fill="#bbbbbb" stroke="none">E</text>
+<text font-family="UniversNextPro-Light" id="seedsynth_text_0" font-size="16" fill="#ffffff" stroke="none">VARIED</text>
+<text font-family="UniversNextPro-Light" id="seedsynth_text_1" font-size="10" fill="#aaaaaa" stroke="none">SELECT COPY / GROW NEW</text>
+<circle id="seedsynth_palette_0" cx="640" cy="0" r="1" fill="#000000" stroke="#000000" stroke-width="1"/>
+<circle id="seedsynth_palette_1" cx="640" cy="0" r="1" fill="#111111" stroke="#111111" stroke-width="1"/>
+<circle id="seedsynth_palette_2" cx="640" cy="0" r="1" fill="#222222" stroke="#222222" stroke-width="1"/>
+<circle id="seedsynth_palette_3" cx="640" cy="0" r="1" fill="#333333" stroke="#333333" stroke-width="1"/>
+<circle id="seedsynth_palette_4" cx="640" cy="0" r="1" fill="#444444" stroke="#444444" stroke-width="1"/>
+<circle id="seedsynth_palette_5" cx="640" cy="0" r="1" fill="#555555" stroke="#555555" stroke-width="1"/>
+<circle id="seedsynth_palette_6" cx="640" cy="0" r="1" fill="#666666" stroke="#666666" stroke-width="1"/>
+<circle id="seedsynth_palette_7" cx="640" cy="0" r="1" fill="#777777" stroke="#777777" stroke-width="1"/>
+<circle id="seedsynth_palette_8" cx="640" cy="0" r="1" fill="#888888" stroke="#888888" stroke-width="1"/>
+<circle id="seedsynth_palette_9" cx="640" cy="0" r="1" fill="#999999" stroke="#999999" stroke-width="1"/>
+<circle id="seedsynth_palette_10" cx="640" cy="0" r="1" fill="#aaaaaa" stroke="#aaaaaa" stroke-width="1"/>
+<circle id="seedsynth_palette_11" cx="640" cy="0" r="1" fill="#bbbbbb" stroke="#bbbbbb" stroke-width="1"/>
+<circle id="seedsynth_palette_12" cx="640" cy="0" r="1" fill="#cccccc" stroke="#cccccc" stroke-width="1"/>
+<circle id="seedsynth_palette_13" cx="640" cy="0" r="1" fill="#dddddd" stroke="#dddddd" stroke-width="1"/>
+<circle id="seedsynth_palette_14" cx="640" cy="0" r="1" fill="#eeeeee" stroke="#eeeeee" stroke-width="1"/>
+<circle id="seedsynth_palette_15" cx="640" cy="0" r="1" fill="#ffffff" stroke="#ffffff" stroke-width="1"/>
+</g>
